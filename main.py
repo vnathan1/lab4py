@@ -1,1 +1,1 @@
-print ('AJC')
+print ('JMP')
