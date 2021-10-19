@@ -1,7 +1,8 @@
 import cgi
-data = cgi.FieldStorage()
-s1 = data.getvalue('slider')
-
+import json
+s_data = cgi.FieldStorage()
+s1 = s_data.getvalue('slider')
+b_data = s_data.getvalue('button')
 with open('led-pwm.txt', 'w') as f:
   f.write(str(s1))
 
